@@ -19,7 +19,7 @@ var iniciaAplicacao = function (){
 
 var createCalculateButtonOnDOM = function(){
     var htmlToAppend = `&nbsp;&nbsp;<button id="buttonCalculateHours" class="btn btn-sm btn-outline-primary">Calculate Hours by Project</button>`;
-    $("span.monthly-report-navigation").first().append(htmlToAppend);
+    $(".subheader-wrapper").first().append(htmlToAppend);
 
     $("#buttonCalculateHours").on("click", function(){
         iniciaAplicacao();
@@ -42,7 +42,7 @@ var appendValueOnDOM = function(){
 </table>
 </div>`;
 
-    var $divToAppendBefore = $(".monthly-report-divider").first();
+    var $divToAppendBefore = $(".monthly-report-pane").first();
     $divToAppendBefore.before(baseHtml);
     var $tbodySumHoursByProject = $("#tbodyToSumHours");
 
